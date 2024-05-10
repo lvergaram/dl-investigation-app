@@ -3,6 +3,8 @@ import { Leon,Lobo,Oso,Aguila,Serpiente } from "./classes.js";
 
 export const animales = (() => {
 
+  const __dirname = window.location
+  console.log(__dirname)
   const jsonPath = './assets/animales.json';
   const imgPath = './assets/imgs/'
   const soundPath = './assets/sounds/'

@@ -29,10 +29,10 @@ const renderAnimals=() => {
         const img =  animal.img
         const sonido=  animal.sonido
         $tabla.innerHTML += `
-        <div id="card-img${index}" class="card mx-2" style="width: 9rem;">
+        <div id="card-img${index}" class="card mx-2" >
             <img src=${img} index="${index}" class="card-img-top" alt="imagen de ${img}">
             
-            <button soundSrc="${sonido}" class="sonido btn btn-secondary">Play
+            <button soundSrc="${sonido}" class="sonido btn btn-secondary">🔊
             <audio src="${sonido}"></audio>
             </button> 
         </div>    
@@ -103,12 +103,8 @@ const submitAnimalHandler = async(e) => {
 // events
 document.addEventListener('DOMContentLoaded', function() {
 
-
-
-
     $tabla.addEventListener("click",clickCardHandler)
     $nombreInput.addEventListener("change",selectAnimalHandler)
     $formularioBtn.addEventListener("click",submitAnimalHandler)
-
 
   })
